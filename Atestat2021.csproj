@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55ECC61D-E8AE-4F90-B561-6620B847A78E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Atestat2021</RootNamespace>
+    <AssemblyName>Atestat2021</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Atestat2021DataSet.cs">
+      <DependentUpon>Atestat2021DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Atestat2021DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Atestat2021DataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Program.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Atestat2021DataSet.xsc">
+      <DependentUpon>Atestat2021DataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Atestat2021DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Atestat2021DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Atestat2021DataSet.xss">
+      <DependentUpon>Atestat2021DataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Atestat2021.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Atestat2021_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>Atestat2021.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\iStock-63920470010.jpg" />
+    <None Include="Resources\iStock-6392047009.jpg" />
+    <None Include="Resources\iStock-6392047008.jpg" />
+    <None Include="Resources\iStock-6392047007.jpg" />
+    <None Include="Resources\iStock-6392047006.jpg" />
+    <None Include="Resources\iStock-6392047005.jpg" />
+    <None Include="Resources\10 %281%29.png" />
+    <None Include="Resources\iStock-6392047004.jpg" />
+    <None Include="Resources\4 %281%29.png" />
+    <None Include="Resources\6 %281%29.png" />
+    <None Include="Resources\5 %282%29.png" />
+    <None Include="Resources\5 %281%29.png" />
+    <None Include="Resources\7 %281%29.png" />
+    <None Include="Resources\8 %281%29.png" />
+    <None Include="Resources\1 %281%291.png" />
+    <None Include="Resources\1 %281%29.png" />
+    <None Include="Resources\_11184_1_1591369990.png" />
+    <None Include="Resources\verighete-teic271-din-aur-albroz-de-14k_15173_1_1603965248.png" />
+    <None Include="Resources\_11354_1_1591370011.png" />
+    <None Include="Resources\iStock-6392047003.jpg" />
+    <None Include="Resources\iStock-6392047002.jpg" />
+    <None Include="Resources\iStock-6392047001.jpg" />
+    <None Include="Resources\iStock-639204700.jpg" />
+    <None Include="Resources\Untitled design %2817%294.png" />
+    <None Include="Resources\vector_black_background_shopping_cart_icon_2806733.jpg" />
+    <None Include="Resources\92401.png" />
+    <None Include="Resources\Fără titlu7.png" />
+    <None Include="Resources\Fără titlu6.png" />
+    <None Include="Resources\vector_black_background_shopping_cart_icon_2806732.jpg" />
+    <None Include="Resources\depositphotos_146725863-stock-illustration-shopping-cart-icon.jpg" />
+    <None Include="Resources\Untitled design %2816%293.png" />
+    <None Include="Resources\Untitled design %2818%292.png" />
+    <None Include="Resources\Design fără titlu.png" />
+    <None Include="Resources\vector_black_background_shopping_cart_icon_2806731.jpg" />
+    <None Include="Resources\Fără titlu5.png" />
+    <None Include="Resources\9240.png" />
+    <None Include="Resources\vector_black_background_shopping_cart_icon_280673.jpg" />
+    <None Include="Resources\Fără titlu4.png" />
+    <None Include="Resources\Fără titlu3.png" />
+    <None Include="Resources\Fără titlu2.png" />
+    <None Include="Resources\Fără titlu1.png" />
+    <None Include="Resources\Fără titlu.png" />
+    <None Include="Resources\istockphoto-1206806317-612x612.jpg" />
+    <None Include="Resources\Untitled design %2817%293.png" />
+    <None Include="Resources\Untitled design %2816%292.png" />
+    <None Include="Resources\Untitled design %2817%292.png" />
+    <None Include="Resources\Untitled design %2817%291.png" />
+    <None Include="Resources\Untitled design %2816%291.png" />
+    <None Include="Resources\Untitled design %2816%29.png" />
+    <None Include="Resources\Untitled design %2817%29.png" />
+    <None Include="Resources\Untitled design %2818%291.png" />
+    <None Include="Resources\Untitled design %2818%29.png" />
+    <None Include="Resources\Untitled design %2815%292.png" />
+    <None Include="Resources\Untitled design %2815%291.png" />
+    <None Include="Resources\2 %281%29.png" />
+    <None Include="Resources\diamond-15607843511.jpg" />
+    <None Include="Resources\ed2e4921f3ff8f5d3aa6cc2207b19d323.jpg" />
+    <None Include="Resources\diamond-1560784351.jpg" />
+    <None Include="Resources\ed2e4921f3ff8f5d3aa6cc2207b19d322.jpg" />
+    <None Include="Resources\ed2e4921f3ff8f5d3aa6cc2207b19d321.jpg" />
+    <None Include="Resources\eec406b999039bed1f628a0bbe56916d.jpg" />
+    <None Include="Resources\ed2e4921f3ff8f5d3aa6cc2207b19d32.jpg" />
+    <None Include="Resources\Purchasing-Loose-Diamonds.jpg" />
+    <None Include="Resources\Untitled design %2815%29.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\10.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
